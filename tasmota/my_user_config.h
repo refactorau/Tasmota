@@ -1221,6 +1221,7 @@
 #ifdef USE_CONFIG_OVERRIDE
   #include "user_config_override.h"              // Configuration overrides for my_user_config.h
 #endif
+#include "refactor_config.h"
 
 /*********************************************************************************************\
  * Post-process obsoletes

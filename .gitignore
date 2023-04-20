@@ -37,3 +37,7 @@ lib/libesp32/berry/berry
 .vscode/settings.json
 *.bak
 *.code-workspace
+
+# vim specific
+*.sw[a-z]
+
