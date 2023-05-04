@@ -39,18 +39,22 @@
 #endif // MQTT_TLS_ENABLED
 #define MQTT_TLS_ENABLED true
 
-
 // -- CODE_IMAGE_STR is the name shown between brackets on the Information page or in INFO MQTT messages
 #ifdef CODE_IMAGE_STR
 #undef CODE_IMAGE_STR
 #endif // CODE_IMAGE_STR
 #define CODE_IMAGE_STR "refactor"
 
+#ifdef WIFI_CONFIG_TOOL
+#undef WIFI_CONFIG_TOOL
+#endif
+#define WIFI_CONFIG_TOOL WIFI_MANAGER_RESET_ONLY
+
+#ifndef NO_CAPTIVE_PORTAL
+#define NO_CAPTIVE_PORTAL
+#endif
+
 #endif // FIRMWARE_REFACTOR
-
-
-
-
 
 
 
